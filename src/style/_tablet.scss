@@ -1,0 +1,51 @@
+.about-me-section {
+    background-color: #F3EEE1;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+
+    .about-me-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 30px; 
+        
+    }
+
+    .about-me-text {
+        .ellinor-h1 {
+            font-size: 1.5rem;
+        }
+    
+        .frontend-student-h {
+            font-size: 2rem;
+        }
+    
+        .digital-marketing {
+            font-size: 1rem;
+        }
+    }
+}
+
+main {
+    .project1,
+    .project2,
+    .project3,
+    .project4,
+    .project5,
+    .project6 {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        img {
+            margin-top: 20px;
+            width: 150px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .project-content {
+            width: 60%;
+        }
+    }
+}
