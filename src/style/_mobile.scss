@@ -62,9 +62,8 @@ header {
     .about-me-wrapper {
         display: flex;
         align-items: center;
-        gap: 2rem; 
-        max-width: 1200px;
-        margin: 0 auto;
+        gap: 30px; 
+        margin-left: -15px;
         padding: 2rem;
     }
 
@@ -72,6 +71,8 @@ header {
         width: 120px;
         height: 120px;
         border-radius: 50%;
+        object-fit: cover;
+        border: 10px solid #f5bb85;
     }
 
     .about-me-text {
@@ -186,11 +187,13 @@ main {
 
 // Skills Section
 .skills {
-
     .code,
     .toolbox,
     .more {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        background-color: #F3EEE1;
+        padding: 20px;
+        border-radius: 8px;
 
         h3 {
             font-size: 1.2rem;
