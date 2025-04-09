@@ -4,31 +4,220 @@ body {
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4{
-    font-family: raleway;
-    font-weight: 400;
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Raleway', sans-serif;
 }
 
-p, span, li {
-    font-family: libre baskerville;
+p,
+span,
+li {
+    font-family: 'Libre Baskerville', serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// Nav
 nav {
-    background-color: #FFD8C2;
+    background-color: #D3EEE1;
     padding: 20px;
     z-index: 100;
+
     .nav-list {
         list-style: none;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
         .nav-item {
             cursor: pointer;
             font-size: 0.9rem;
+            padding: 5px;
+            transition: border-bottom 0.3s ease;
+
             &:hover {
                 border-bottom: 2px solid black;
             }
         }
+    }
+}
+
+// Header
+header {
+    background-color: white;
+}
+
+.about-me-section {
+    background-color: #F3EEE1;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+
+    .about-me-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 2rem; 
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+
+    .about-me-text {
+        .ellinor-h1 {
+            color: #ff7b00;
+            font-size: 1rem;
+            margin-bottom: 0;
+            letter-spacing: 2px;
+        }
+    
+        .frontend-student-h {
+            font-weight: 800;
+            font-size: 1.1rem;
+            margin: 0;
+            letter-spacing: 0;
+            padding: 6px 0 2px 0;
+        }
+    
+        .digital-marketing {
+            font-weight: 400;
+            font-size: 0.7rem;
+            margin-top: 0;
+            letter-spacing: 0.5px;
+        }
+    }
+
+    .about {
+        line-height: 22px;
+        font-size: 1rem;
+    }
+
+    .github:hover {
+        color: grey;
+    }
+
+    .linkedin:hover {
+        color: grey;
+    }
+}
+
+// Projects Section
+main {
+    section {
+        padding: 20px;
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+    }
+
+    .project1,
+    .project2,
+    .project3,
+    .project4,
+    .project5,
+    .project6 {
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #F3EEE1;
+        border-radius: 8px;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+
+        p {
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 15px;
+
+            li {
+                display: inline-block;
+                margin-right: 10px;
+                font-size: 0.9rem;
+                background-color: #ffd8c2;
+                padding: 5px 10px;
+                border-radius: 20px;
+            }
+        }
+
+        button {
+            margin-right: 10px;
+            padding: 10px 20px;
+            background-color: #FFD8C2;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #ffaf7b;
+            }
+        }
+    }
+}
+
+// Skills Section
+.skills {
+
+    .code,
+    .toolbox,
+    .more {
+        margin-bottom: 30px;
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        span {
+            display: inline-block;
+            margin-right: 10px;
+            margin-top: 5px;
+            padding: 8px 15px;
+            background-color: #ffd8c2;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+// Footer Section
+footer {
+    background-color: #F3EEE1;
+    padding: 20px;
+    text-align: center;
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    p {
+        margin: 10px 0;
     }
 }
