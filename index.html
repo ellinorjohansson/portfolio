@@ -4,28 +4,37 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Portfolio - Ellinor Johansson</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Meta-->
+    <meta name="description" content="Välkommen till min personliga portfolio!">
+    <meta name="keywords" content="ellinor, johansson, portfolio, frontend developer, developer, frontend, code, website">
+
+    <meta property="og:title" content="Ellinor Johansson - portfolio">
+    <meta property="og:description" content="Välkommen till Ellinor Johanssons portfolio!">
+    <meta property="og:image" content="https://github.com/ellinorjohansson/portfolio/blob/main/assets/img/ellinor.avif">
+    <meta property="og:url" content="https://medieinstitutet.github.io/fed24d-grafiska-verktyg-mandarinfiskarna/">
+    <meta property="og:type" content="website">
   </head>
   <body>
     <header>
       <div>
         <nav>
           <ul class="nav-list">
-            <li class="nav-item">Home</li>
-            <li class="nav-item">Featured Projects</li>
-            <li class="nav-item">Skills</li>
-            <li class="nav-item">Get in touch</li>
+            <li class="nav-item"><a href="#home">Home</a></li>
+            <li class="nav-item"><a href="#featuredProject">Featured projects</a></li>
+            <li class="nav-item"><a href="#skills">Skills</a></li>
+            <li class="nav-item"><a href="#getInTouch">Get in touch</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
     <main>
-      <section class="about-me-section">
+      <section id="home" class="about-me-section">
         <div class="about-me-wrapper">
           <img class="profile-img" src="/assets/img/ellinor.avif" alt="">
           <div class="about-me-text">
@@ -64,10 +73,10 @@
             <i class="fab fa-linkedin fa-2x linkedin"></i>
           </a>            
         </div>
-        
       </section>
-      <section>
-        <h2 class="project-header">Featured Projects</h2>
+
+      <section id="featuredProject">
+        <h2 class="project-header">Featured projects</h2>
         <div class="projects">
           <div class="project1">
             <img src="assets/img/skyvoyage.avif" alt="">
@@ -197,7 +206,7 @@
         </div>
       </section>
 
-      <section class="skills">
+      <section class="skills" id="skills">
         <h2>Skills</h2>
 
         <div class="skills-wrapper">
@@ -243,14 +252,14 @@
       </section>
     </main>
 
-    <footer>
+    <footer id="getInTouch">
       <h2 class="footer-header">Get in touch</h2>
       <div>
         <h3>Ellinor Johansson</h3>
         <p>Frontend developer student</p>
         <p>+ digital marketer</p>
       </div>
-      <a href="mailto:ellinor.johansson@medieinstitutet.se">ellinor.johansson@medieinstitutet.se</a>
+      <a class="mail-footer" href="mailto:ellinor.johansson@medieinstitutet.se">ellinor.johansson@medieinstitutet.se</a>
       <a href="https://github.com/ellinorjohansson" target="_blank">
         <i class="fab fa-github fa-2x github"></i>
       </a>

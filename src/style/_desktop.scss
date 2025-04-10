@@ -9,6 +9,13 @@ header {
 }
 
 main {
+  .about-me-section {
+    margin: 40px auto;
+    max-width: 900px;
+    .about-me-wrapper {
+      margin-left: 180px;
+    }
+  }
     .project-header {
         margin-left: 90px;
     }
@@ -37,15 +44,10 @@ main {
     }
 }
 
-.about-me-section {
-    margin: 40px auto;
-    max-width: 900px;
-}
-
 .skills {
-    margin: 0 90px 0 90px;
+  margin: 0 90px 0 90px;
 }
 
 .footer-header {
-    font-size: 2rem;
+  font-size: 2rem;
 }
