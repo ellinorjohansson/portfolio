@@ -1,3 +1,11 @@
+nav {
+    .nav-list {
+        .nav-item {
+            font-size: 1rem;
+        }
+    }
+}
+
 .about-me-section {
     background-color: #F3EEE1;
     margin: 20px;
@@ -9,6 +17,7 @@
         align-items: center;
         gap: 30px; 
         margin-left: 180px;
+        flex-direction: row;
     }
 
     .about-me-text {
@@ -23,6 +32,11 @@
         .digital-marketing {
             font-size: 1rem;
         }
+    }
+
+    .about {
+        margin: 0 auto;
+        max-width: 500px;
     }
 }
 

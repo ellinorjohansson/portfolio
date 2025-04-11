@@ -37,7 +37,7 @@ nav {
 
         .nav-item {
             cursor: pointer;
-            font-size: 0.9rem;
+            font-size: 0.6rem;
             padding: 5px;
             transition: border-bottom 0.3s ease;
 
@@ -56,15 +56,14 @@ header {
 .about-me-section {
     background-color: #F3EEE1;
     margin: 20px;
-    padding: 20px;
     border-radius: 8px;
 
     .about-me-wrapper {
         display: flex;
+        flex-direction: column;
         align-items: center;
         gap: 30px; 
-        margin-left: -15px;
-        padding: 2rem;
+        padding: 20px;
     }
 
     .profile-img {
@@ -78,14 +77,14 @@ header {
     .about-me-text {
         .ellinor-h1 {
             color: #ff7b00;
-            font-size: 1rem;
+            font-size: 1.2rem;
             margin-bottom: 0;
             letter-spacing: 2px;
         }
     
         .frontend-student-h {
             font-weight: 800;
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             margin: 0;
             letter-spacing: 0;
             padding: 6px 0 2px 0;
@@ -93,7 +92,7 @@ header {
     
         .digital-marketing {
             font-weight: 400;
-            font-size: 0.7rem;
+            font-size: 0.9rem;
             margin-top: 0;
             letter-spacing: 0.5px;
         }
@@ -104,8 +103,11 @@ header {
         font-size: 1rem;
     }
 
-    .github:hover {
-        color: grey;
+    .github {
+        margin-right: 15px;
+        &:hover {
+            color: grey;
+        }
     }
 
     .linkedin:hover {
@@ -177,6 +179,7 @@ main {
             border-radius: 20px;
             cursor: pointer;
             font-weight: 900;
+            font-size: 0.8rem;
 
             &:hover {
                 background-color: #ffaf7b;
