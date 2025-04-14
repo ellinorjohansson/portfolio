@@ -67,12 +67,10 @@ a {
     display: none;
 }
   
-// När checkboxen är markerad, visa menyn
 #menuToggle:checked + .menu .navbar {
     display: block;
 }
   
-// Animation för att visa hamburgarmenyn
 #menuToggle:checked + .menu .menu-button span:nth-child(1) {
     transform: rotate(45deg);
     position: relative;
