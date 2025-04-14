@@ -22,35 +22,71 @@ a {
     color: inherit;
 }
 
-// Nav
-nav {
-    background-color: #D3EEE1;
-    padding: 20px;
-    z-index: 100;
-
-    .nav-list {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-        .nav-item {
-            cursor: pointer;
-            font-size: 0.6rem;
-            padding: 5px;
-            transition: border-bottom 0.3s ease;
-
-            &:hover {
-                border-bottom: 2px solid black;
-            }
-        }
-    }
+.menu-button {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55px;
+    height: 41px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
 }
 
-// Header
-header {
-    background-color: white;
+.menu-button span {
+    height: 7px;
+    background-color: black;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.navbar {
+    display: none;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin: 10px 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+}
+
+#menuToggle {
+    display: none;
+}
+  
+// När checkboxen är markerad, visa menyn
+#menuToggle:checked + .menu .navbar {
+    display: block;
+}
+  
+// Animation för att visa hamburgarmenyn
+#menuToggle:checked + .menu .menu-button span:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 16px;
+}
+  
+#menuToggle:checked + .menu .menu-button span:nth-child(2) {
+    opacity: 0;
+}
+  
+#menuToggle:checked + .menu .menu-button span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -16px;
 }
 
 .about-me-section {
@@ -67,6 +103,7 @@ header {
     }
 
     .profile-img {
+        margin-top: 30px;
         width: 120px;
         height: 120px;
         border-radius: 50%;
@@ -77,14 +114,14 @@ header {
     .about-me-text {
         .ellinor-h1 {
             color: #ff7b00;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-bottom: 0;
             letter-spacing: 2px;
         }
     
         .frontend-student-h {
             font-weight: 800;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             margin: 0;
             letter-spacing: 0;
             padding: 6px 0 2px 0;
@@ -92,7 +129,7 @@ header {
     
         .digital-marketing {
             font-weight: 400;
-            font-size: 0.9rem;
+            font-size: 1rem;
             margin-top: 0;
             letter-spacing: 0.5px;
         }
