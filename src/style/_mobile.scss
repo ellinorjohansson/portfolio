@@ -19,7 +19,6 @@ li {
 
 a {
     text-decoration: none;
-    color: inherit;
 }
 
 .menu-button {
@@ -160,6 +159,14 @@ main {
             font-weight: 700;
             margin-bottom: 20px;
         }
+
+        .github {
+            color: black;
+        }
+
+        .linkedin {
+            color: black;
+        }
     }
 
     .project1,
@@ -267,5 +274,13 @@ footer {
         display: block;
         margin: 20px 0 20px 0;
         color: #ff7b00;
+    }
+
+    .github {
+        color: black;
+    }
+
+    .linkedin {
+        color: black;
     }
 }
