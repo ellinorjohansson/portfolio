@@ -21,70 +21,94 @@ a {
     text-decoration: none;
 }
 
-.menu-button {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 55px;
-    height: 41px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.menu-button span {
-    height: 7px;
-    background-color: black;
-    border-radius: 10px;
-    transition: all 0.3s;
-}
-
-.navbar {
-    display: none;
-}
-
-.nav-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-item {
-    margin: 10px 0;
-}
-
-.nav-item a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    padding: 10px;
-    display: block;
-}
-
-#menuToggle {
-    display: none;
-}
-  
-#menuToggle:checked + .menu .navbar {
-    display: block;
-}
-  
-#menuToggle:checked + .menu .menu-button span:nth-child(1) {
-    transform: rotate(45deg);
+.site-header {
+    background-color: #D3EEE1;
+    padding: 20px;
     position: relative;
-    top: 16px;
-}
   
-#menuToggle:checked + .menu .menu-button span:nth-child(2) {
-    opacity: 0;
-}
+    .h-portfolio {
+      font-size: 2rem;
+      font-weight: bold;
+    }
   
-#menuToggle:checked + .menu .menu-button span:nth-child(3) {
-    transform: rotate(-45deg);
-    position: relative;
-    top: -16px;
-}
+    .menu-toggle {
+      display: none;
+    }
+  
+    .menu-button {
+      position: absolute;
+      top: 46px;
+      right: 30px;
+      width: 45px;
+      height: 35px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 10;
+  
+      span {
+        display: block;
+        height: 5px;
+        background-color: black;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  
+    .navbar {
+      display: none;
+      background-color: #D3EEE1;
+  
+      .nav-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 20px;
+  
+        .nav-item a {
+          font-size: 1.2rem;
+          color: black;
+          transition: 0.2s;
+  
+          &:hover {
+            color: #ff7b00;
+          }
+        }
+      }
+    }
+  
+    .menu-toggle:checked ~ .navbar {
+      display: block;
+      animation: slideDown 0.3s ease-in-out;
+    }
+  
+    .menu-toggle:checked + .menu-button span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 16px);
+    }
+    .menu-toggle:checked + .menu-button span:nth-child(2) {
+      opacity: 0;
+    }
+    .menu-toggle:checked + .menu-button span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -16px);
+    }
+  
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  
 
 .about-me-section {
     background-color: #F3EEE1;
@@ -179,7 +203,6 @@ main {
         padding: 20px;
         background-color: #F3EEE1;
         border-radius: 8px;
-
         img {
             width: 100%;
             height: auto;
@@ -222,6 +245,7 @@ main {
             cursor: pointer;
             font-weight: 900;
             font-size: 0.8rem;
+            color: black;
 
             &:hover {
                 background-color: #ffaf7b;
