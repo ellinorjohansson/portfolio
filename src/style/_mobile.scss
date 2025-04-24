@@ -134,7 +134,7 @@ a {
 
     .about-me-text {
         .ellinor-h1 {
-            color: #ff7b00;
+            color: #b55903;
             font-size: 1.3rem;
             margin-bottom: 0;
             letter-spacing: 2px;
@@ -198,7 +198,8 @@ main {
     .project3,
     .project4,
     .project5,
-    .project6 {
+    .project6,
+    .project7 {
         margin-bottom: 20px;
         padding: 20px;
         background-color: #F3EEE1;
@@ -297,7 +298,10 @@ footer {
     .mail-footer {
         display: block;
         margin: 20px 0 20px 0;
-        color: #ff7b00;
+        color: #ab5300;
+        &:hover {
+            color: #ff7b00;
+        }
     }
 
     .github {
