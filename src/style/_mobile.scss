@@ -222,6 +222,7 @@ body {
   
     .github, .linkedin {
       margin-right: 15px;
+      margin-bottom: 15px;
   
       &:hover {
         color: grey;
@@ -256,7 +257,7 @@ body {
     .project6,
     .project7 {
       margin-bottom: 20px;
-      padding: 20px;
+      padding: 20px 20px 45px 20px;
       background-color: #f3eee1;
       border-radius: 8px;
   
@@ -285,7 +286,7 @@ body {
       ul {
         list-style-type: none;
         padding: 0;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
   
         li {
           display: inline-block;
