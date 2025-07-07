@@ -1,3 +1,5 @@
+import './AboutMe.scss'
+
 export const AboutMe = () => {
   return (
     <>

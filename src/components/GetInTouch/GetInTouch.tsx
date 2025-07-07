@@ -1,3 +1,5 @@
+import './GetInTouch.scss'
+
 export const GetInTouch = () => {
   return (
     <>

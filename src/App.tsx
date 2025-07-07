@@ -1,9 +1,9 @@
-import './App.css'
-import { AboutMe } from './components/AboutMe'
-import { GetInTouch } from './components/GetInTouch'
-import { Header } from './components/Header'
-import { Projects } from './components/Projects'
-import { Skills } from './components/Skills'
+import './App.scss'
+import { AboutMe } from './components/AboutMe/AboutMe'
+import { GetInTouch } from './components/GetInTouch/GetInTouch'
+import { Header } from './components/Header/Header'
+import { Projects } from './components/Projects/Projects'
+import { Skills } from './components/Skills/Skills'
 
 function App() {
 
