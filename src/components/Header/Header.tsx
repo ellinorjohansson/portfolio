@@ -16,10 +16,10 @@ export const Header = () => {
         </button>
         <nav className={`header-nav ${menuOpen ? 'open' : ''}`}>
           <ul>
-            <li>About me</li>
-            <li>Projects</li>
-            <li>Skills</li>
-            <li>Get in touch</li>
+            <li><a href="">About me</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Get in touch</a></li>
           </ul>
         </nav>
       </header>
