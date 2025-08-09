@@ -5,11 +5,13 @@ export const AboutMe = () => {
     <div className='wrapper'>
       <div className='info-wrapper'>
         <section className='short-about-me'>
-          <img src="" alt="" />
-          <h2>Frontend developer</h2>
-          <h3>+ digital marketer</h3>
+          <img src="/src/assets/ellinor_pic.avif" alt="Picture of Ellinor Johansson" />
+          <div className='title-block'>
+            <h2 className='front-end-title'>Frontend developer</h2>
+            <h3 className='marketing-title'>+ digital marketer</h3>
+          </div>
         </section>
-        <section>
+        <section className='about-me'>
           <h2>Hi, glad you found your way here!</h2>
           <p>
             I've always been driven by a curiosity for how digital content can
@@ -33,14 +35,15 @@ export const AboutMe = () => {
             right
           </p>
         </section>
-        <section>
-          <a href="https://github.com/ellinorjohansson" target="_blank">
-            <i></i>
+        <section className='socials'>
+          <a href="https://github.com/ellinorjohansson" target="_blank" rel="noopener noreferrer">
+            <i className='bx bxl-github'></i>
           </a>
-          <a href="https://www.linkedin.com/in/ellinor-johansson-957a20224/">
-            <i></i>
+          <a href="https://www.linkedin.com/in/ellinor-johansson-957a20224/" target="_blank" rel="noopener noreferrer">
+            <i className='bx bxl-linkedin'></i>
           </a>
         </section>
+
       </div>
     </div>
   );
