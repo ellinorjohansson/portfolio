@@ -4,7 +4,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 3px;
+  width: 100%;
+  z-index: 1000;
+  position: fixed;
 
   h1 {
     margin-left: 90px;
@@ -29,6 +32,7 @@ header {
       height: 4px;
       border-radius: 4px;
       transition: 0.3s ease;
+      background-color: white;
     }
 
     &.open {
@@ -76,18 +80,25 @@ header {
   @media (max-width: 768px) {
     flex-wrap: wrap;
 
+    h1 {
+      margin-left: 55px;
+      font-size: 1.5rem;
+    }
+
     .header-toggle {
       display: flex;
+      margin-right: 70px;
     }
 
     .header-nav {
       width: 100%;
       display: none;
       text-align: center;
+      margin-left: 60px;
 
       ul {
         flex-direction: column;
-        padding: 1rem 0;
+        padding: 16px 0;
       }
 
       &.open {
