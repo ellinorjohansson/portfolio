@@ -7,8 +7,8 @@ export const Projects = () => {
         <h2 className="project-header" id="projects">
           Projects
         </h2>
-        <div className="projects">
-          <div className="project1">
+        <div className="projects-grid">
+          <div className="project-card">
             <img src="assets/img/skyvoyage.avif" alt="" loading="lazy"></img>
             <div className="project-content">
               <h3>SkyVoyage (Group project) </h3>
@@ -30,7 +30,7 @@ export const Projects = () => {
                   <li>Vite</li>
                 </ul>
               </div>
-              <div>
+              <div className="project-buttons-row">
                 <a
                   className="project-button"
                   href="https://medieinstitutet.github.io/fed24d-grafiska-verktyg-mandarinfiskarna/"
@@ -49,7 +49,7 @@ export const Projects = () => {
             </div>
           </div>
 
-          <div className="project2">
+          <div className="project-card">
             <img
               src="assets/img/mulberry_beauty.avif"
               alt=""
@@ -68,7 +68,7 @@ export const Projects = () => {
                   <li>Vite</li>
                 </ul>
               </div>
-              <div>
+              <div className="project-buttons-row">
                 <a
                   className="project-button"
                   href="https://medieinstitutet.github.io/fed24d-js-intro-inl-2-quiz-mulberry-beauty/"
@@ -87,7 +87,7 @@ export const Projects = () => {
             </div>
           </div>
 
-          <div className="project3">
+          <div className="project-card">
             <img src="assets/img/tough_cookie.avif" alt="" loading="lazy"></img>
             <div className="project-content">
               <h3>Tough Cookie</h3>
@@ -102,7 +102,7 @@ export const Projects = () => {
                   <li>SASS</li>
                 </ul>
               </div>
-              <div>
+              <div className="project-buttons-row">
                 <a
                   className="project-button"
                   href="https://medieinstitutet.github.io/fed24d-html-css-kundprojekt-ellinorjohansson/"
@@ -121,7 +121,7 @@ export const Projects = () => {
             </div>
           </div>
 
-          <div className="project4">
+          <div className="project-card">
             <img
               src="assets/img/christmas_shop.avif"
               alt=""
@@ -143,7 +143,7 @@ export const Projects = () => {
                   <li>Eslint</li>
                 </ul>
               </div>
-              <div>
+              <div className="project-buttons-row">
                 <a
                   className="project-button"
                   href="https://medieinstitutet.github.io/fed24d-js-intro-inl-1-webshop-ellinorjohansson/"
@@ -162,7 +162,7 @@ export const Projects = () => {
             </div>
           </div>
 
-          <div className="project5">
+          <div className="project-card">
             <img src="assets/img/memory.avif" alt="" loading="lazy"></img>
             <div className="project-content">
               <h3>Memory</h3>
@@ -183,7 +183,7 @@ export const Projects = () => {
                   <li>Vite</li>
                 </ul>
               </div>
-              <div>
+              <div className="project-buttons-row">
                 <a
                   className="project-button"
                   href="https://github.com/ellinorjohansson/memory"
@@ -195,7 +195,7 @@ export const Projects = () => {
             </div>
           </div>
 
-          <div className="project6">
+          <div className="project-card">
             <img
               src="assets/img/quote_generator.avif"
               alt=""
@@ -218,7 +218,7 @@ export const Projects = () => {
                   <li>Vite</li>
                 </ul>
               </div>
-              <div>
+              <div className="project-buttons-row">
                 <a
                   className="project-button"
                   href="https://github.com/ellinorjohansson/quote-generator"
@@ -230,7 +230,7 @@ export const Projects = () => {
             </div>
           </div>
 
-          <div className="project7">
+          <div className="project-card">
             <img src="assets/img/api_books.avif" alt="" loading="lazy"></img>
             <div className="project-content">
               <h3>E-shop Product Catalog – REST API & Frontend</h3>
@@ -259,7 +259,7 @@ export const Projects = () => {
                   <li>SQL</li>
                 </ul>
               </div>
-              <div>
+              <div className="project-buttons-row">
                 <a
                   className="project-button"
                   href="https://github.com/ellinorjohansson/fed24d-api-utveckling-inl-1-ellinor-johansson"
@@ -271,7 +271,7 @@ export const Projects = () => {
             </div>
           </div>
 
-          <div className="project8">
+          <div className="project-card">
             <img
               src="assets/img/the_book_page.avif"
               alt=""
@@ -304,7 +304,7 @@ export const Projects = () => {
                   <li>NoSQL</li>
                 </ul>
               </div>
-              <div>
+              <div className="project-buttons-row">
                 <a
                   className="project-button"
                   href="https://github.com/ellinorjohansson/book-API"
@@ -315,7 +315,7 @@ export const Projects = () => {
               </div>
             </div>
           </div>
-          <div className="project9">
+          <div className="project-card">
             <img
               src="assets/img/todo_screenshot.avif"
               alt=""
@@ -338,7 +338,7 @@ export const Projects = () => {
                   <li>React</li>
                 </ul>
               </div>
-              <div>
+              <div className="project-buttons-row">
                 <a
                   className="project-button"
                   href="https://medieinstitutet.github.io/fed24d-the-last-todos-ellinorjohansson/"
