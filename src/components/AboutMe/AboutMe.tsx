@@ -2,7 +2,7 @@ import './AboutMe.scss'
 
 export const AboutMe = () => {
   return (
-    <div className='wrapper'>
+    <div className='wrapper' id='about'>
       <div className='info-wrapper'>
         <section className='short-about-me'>
           <img src="/src/assets/ellinor_pic.avif" alt="Picture of Ellinor Johansson" />

@@ -3,7 +3,7 @@ import './Projects.scss'
 export const Projects = () => {
   return (
     <>
-      <h2 className="project-header">Projects</h2>
+      <h2 className="project-header" id='projects'>Projects</h2>
       <div className="projects">
         <div className="project1">
           <img src="assets/img/skyvoyage.avif" alt="" loading="lazy"></img>

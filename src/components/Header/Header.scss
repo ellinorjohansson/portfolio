@@ -77,6 +77,10 @@ header {
             transform: scale(1.1);
           }
         }
+        a.active {
+          color: rgb(77, 104, 77);
+          font-weight: 500;
+        }
       }
     }
   }
