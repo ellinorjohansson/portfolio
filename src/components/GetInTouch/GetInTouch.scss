@@ -1,0 +1,147 @@
+footer {
+  position: relative;
+  background: rgba(34, 57, 34, 0.55);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 48px 24px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
+  color: #fefaf4;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+
+  .footer-header {
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .contact-info {
+    text-align: center;
+
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #aef7ae;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.85);
+      margin: 4px 0;
+    }
+  }
+
+  .mail-footer {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #aef7ae;
+    text-decoration: none;
+    margin-top: 8px;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #fefaf4;
+    }
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 30px;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid #aef7ae;
+      color: #aef7ae;
+      font-size: 1.6rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
+      &:hover {
+        background-color: #aef7ae;
+        color: #223722;
+        transform: scale(1.1);
+      }
+
+      i {
+        pointer-events: none;
+      }
+    }
+  }
+
+  .scroll-to-top {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #aef7ae;
+    background: rgba(91, 139, 91, 0.55);
+    color: #aef7ae;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      background-color: #aef7ae;
+      color: #223722;
+      transform: scale(1.1);
+    }
+
+    i {
+      pointer-events: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 32px 16px;
+
+    .footer-header {
+      font-size: 1.8rem;
+    }
+
+    .contact-info h3 {
+      font-size: 1.3rem;
+    }
+
+    .contact-info p {
+      font-size: 0.95rem;
+    }
+
+    .mail-footer {
+      font-size: 0.95rem;
+    }
+
+    .social-links a {
+      width: 45px;
+      height: 45px;
+      font-size: 1.4rem;
+    }
+
+    .scroll-to-top {
+      width: 45px;
+      height: 45px;
+      font-size: 1.4rem;
+      bottom: 12px;
+      right: 12px;
+    }
+  }
+}
