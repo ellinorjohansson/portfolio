@@ -3,13 +3,17 @@ import './Projects.scss';
 export const Projects = () => {
   return (
     <>
-      <div className='projects-wrapper'>
+      <div className="projects-wrapper">
         <h2 className="project-header" id="projects">
           Projects
         </h2>
         <div className="projects-grid">
           <div className="project-card">
-            <img src="assets/img/skyvoyage.avif" alt="" loading="lazy"></img>
+            <img 
+              src="src/assets/skyvoyage.avif" 
+              alt="" 
+              loading="lazy"
+            ></img>
             <div className="project-content">
               <h3>SkyVoyage (Group project) </h3>
               <p>
@@ -51,7 +55,7 @@ export const Projects = () => {
 
           <div className="project-card">
             <img
-              src="assets/img/mulberry_beauty.avif"
+              src="src/assets/mulberry_beauty.avif"
               alt=""
               loading="lazy"
             ></img>
@@ -88,7 +92,11 @@ export const Projects = () => {
           </div>
 
           <div className="project-card">
-            <img src="assets/img/tough_cookie.avif" alt="" loading="lazy"></img>
+            <img 
+              src="src/assets/tough_cookie.avif" 
+              alt="" 
+              loading="lazy"
+            ></img>
             <div className="project-content">
               <h3>Tough Cookie</h3>
               <p>
@@ -123,7 +131,7 @@ export const Projects = () => {
 
           <div className="project-card">
             <img
-              src="assets/img/christmas_shop.avif"
+              src="src/assets/christmas_shop.avif"
               alt=""
               loading="lazy"
             ></img>
@@ -163,7 +171,11 @@ export const Projects = () => {
           </div>
 
           <div className="project-card">
-            <img src="assets/img/memory.avif" alt="" loading="lazy"></img>
+            <img 
+              src="src/assets/memory.avif" 
+              alt="" 
+              loading="lazy"
+            ></img>
             <div className="project-content">
               <h3>Memory</h3>
               <p>
@@ -197,7 +209,7 @@ export const Projects = () => {
 
           <div className="project-card">
             <img
-              src="assets/img/quote_generator.avif"
+              src="src/assets/quote_generator.avif"
               alt=""
               loading="lazy"
             ></img>
@@ -231,7 +243,11 @@ export const Projects = () => {
           </div>
 
           <div className="project-card">
-            <img src="assets/img/api_books.avif" alt="" loading="lazy"></img>
+            <img 
+              src="src/assets/api_books.avif" 
+              alt="" 
+              loading="lazy"
+            ></img>
             <div className="project-content">
               <h3>E-shop Product Catalog – REST API & Frontend</h3>
               <p>
@@ -273,7 +289,7 @@ export const Projects = () => {
 
           <div className="project-card">
             <img
-              src="assets/img/the_book_page.avif"
+              src="src/assets/the_book_page.avif"
               alt=""
               loading="lazy"
             ></img>
@@ -317,7 +333,7 @@ export const Projects = () => {
           </div>
           <div className="project-card">
             <img
-              src="assets/img/todo_screenshot.avif"
+              src="src/assets/todo_screenshot.avif"
               alt=""
               loading="lazy"
             ></img>
