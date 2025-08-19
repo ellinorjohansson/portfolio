@@ -43,7 +43,6 @@ export const AboutMe = () => {
             <i className='bx bxl-linkedin'></i>
           </a>
         </section>
-
       </div>
     </div>
   );
