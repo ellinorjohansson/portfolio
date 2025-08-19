@@ -10,7 +10,7 @@ header {
   position: fixed;
   &.scrolled {
     background-color: rgba(34, 57, 34, 0.6);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(28px);
   }
 
   h1 {
