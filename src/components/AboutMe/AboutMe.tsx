@@ -36,10 +36,10 @@ export const AboutMe = () => {
           </p>
         </section>
         <section className='socials'>
-          <a href="https://github.com/ellinorjohansson" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/ellinorjohansson" target="_blank" rel="noopener noreferrer" aria-label='Link to Github'>
             <i className='bx bxl-github'></i>
           </a>
-          <a href="https://www.linkedin.com/in/ellinor-johansson-957a20224/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/ellinor-johansson-957a20224/" target="_blank" rel="noopener noreferrer" aria-label='Link to LinkedIn'>
             <i className='bx bxl-linkedin'></i>
           </a>
         </section>
