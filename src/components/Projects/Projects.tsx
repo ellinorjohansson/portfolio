@@ -136,7 +136,7 @@ export const Projects = () => {
               loading="lazy"
             ></img>
             <div className="project-content">
-              <h3>Christmas Shop (ongoing style) </h3>
+              <h3>Christmas Shop</h3>
               <p>
                 Task with the aim of learning the basics of the JavaScript
                 course where the goal was a webshop based on a list of
@@ -341,7 +341,7 @@ export const Projects = () => {
               <h3>The Last Todo</h3>
               <p>
                 A simple Todo application built with React and TypeScript. It
-                allows users to add, sort, complete, and view tasks. All todos
+                allows users to add, sort, complete and view tasks. All todos
                 are saved in the browser's local storage, so your tasks persist
                 even after refreshing the page.
               </p>
