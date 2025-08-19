@@ -10,7 +10,7 @@ export const Projects = () => {
         <div className="projects-grid">
           <div className="project-card">
             <img 
-              src="src/assets/skyvoyage.avif" 
+              src="/skyvoyage.avif" 
               alt="" 
               loading="lazy"
             ></img>
@@ -55,7 +55,7 @@ export const Projects = () => {
 
           <div className="project-card">
             <img
-              src="src/assets/mulberry_beauty.avif"
+              src="/mulberry_beauty.avif"
               alt=""
               loading="lazy"
             ></img>
@@ -93,7 +93,7 @@ export const Projects = () => {
 
           <div className="project-card">
             <img 
-              src="src/assets/tough_cookie.avif" 
+              src="/tough_cookie.avif" 
               alt="" 
               loading="lazy"
             ></img>
@@ -131,7 +131,7 @@ export const Projects = () => {
 
           <div className="project-card">
             <img
-              src="src/assets/christmas_shop.avif"
+              src="/christmas_shop.avif"
               alt=""
               loading="lazy"
             ></img>
@@ -172,7 +172,7 @@ export const Projects = () => {
 
           <div className="project-card">
             <img 
-              src="src/assets/memory.avif" 
+              src="/memory.avif" 
               alt="" 
               loading="lazy"
             ></img>
@@ -209,7 +209,7 @@ export const Projects = () => {
 
           <div className="project-card">
             <img
-              src="src/assets/quote_generator.avif"
+              src="/quote_generator.avif"
               alt=""
               loading="lazy"
             ></img>
@@ -244,7 +244,7 @@ export const Projects = () => {
 
           <div className="project-card">
             <img 
-              src="src/assets/api_books.avif" 
+              src="/api_books.avif" 
               alt="" 
               loading="lazy"
             ></img>
@@ -289,7 +289,7 @@ export const Projects = () => {
 
           <div className="project-card">
             <img
-              src="src/assets/the_book_page.avif"
+              src="/the_book_page.avif"
               alt=""
               loading="lazy"
             ></img>
@@ -333,7 +333,7 @@ export const Projects = () => {
           </div>
           <div className="project-card">
             <img
-              src="src/assets/todo_screenshot.avif"
+              src="/todo_screenshot.avif"
               alt=""
               loading="lazy"
             ></img>
