@@ -31,7 +31,7 @@ export const GetInTouch = () => {
           >
             <i className="bx bxl-linkedin"></i>
           </a>
-          <button className="scroll-to-top" onClick={scrollToTop}>
+          <button className="scroll-to-top" onClick={scrollToTop} aria-label='Scroll to top'>
             <i className="bx bx-up-arrow-alt"></i>
           </button>
         </div>

@@ -1,4 +1,16 @@
 import './Projects.scss';
+import skyvoyage from '../../assets/skyvoyage.avif';
+import mulberry from '../../assets/mulberry_beauty.avif';
+import tough from '../../assets/tough_cookie.avif';
+import christmas from '../../assets/christmas_shop.avif';
+import memory from '../../assets/memory.avif';
+import quote from '../../assets/quote_generator.avif';
+import eshop from '../../assets/api_books.avif';
+import bookshop from '../../assets/the_book_page.avif';
+import todo from '../../assets/todo_screenshot.avif';
+
+
+
 
 export const Projects = () => {
   return (
@@ -10,7 +22,7 @@ export const Projects = () => {
         <div className="projects-grid">
           <div className="project-card">
             <img 
-              src="/skyvoyage.avif" 
+              src={skyvoyage} 
               alt="" 
               loading="lazy"
             ></img>
@@ -55,7 +67,7 @@ export const Projects = () => {
 
           <div className="project-card">
             <img
-              src="/mulberry_beauty.avif"
+              src={mulberry}
               alt=""
               loading="lazy"
             ></img>
@@ -93,7 +105,7 @@ export const Projects = () => {
 
           <div className="project-card">
             <img 
-              src="/tough_cookie.avif" 
+              src={tough} 
               alt="" 
               loading="lazy"
             ></img>
@@ -131,7 +143,7 @@ export const Projects = () => {
 
           <div className="project-card">
             <img
-              src="/christmas_shop.avif"
+              src={christmas}
               alt=""
               loading="lazy"
             ></img>
@@ -172,7 +184,7 @@ export const Projects = () => {
 
           <div className="project-card">
             <img 
-              src="/memory.avif" 
+              src={memory}
               alt="" 
               loading="lazy"
             ></img>
@@ -209,7 +221,7 @@ export const Projects = () => {
 
           <div className="project-card">
             <img
-              src="/quote_generator.avif"
+              src={quote}
               alt=""
               loading="lazy"
             ></img>
@@ -244,7 +256,7 @@ export const Projects = () => {
 
           <div className="project-card">
             <img 
-              src="/api_books.avif" 
+              src={eshop} 
               alt="" 
               loading="lazy"
             ></img>
@@ -289,7 +301,7 @@ export const Projects = () => {
 
           <div className="project-card">
             <img
-              src="/the_book_page.avif"
+              src={bookshop}
               alt=""
               loading="lazy"
             ></img>
@@ -333,7 +345,7 @@ export const Projects = () => {
           </div>
           <div className="project-card">
             <img
-              src="/todo_screenshot.avif"
+              src={todo}
               alt=""
               loading="lazy"
             ></img>

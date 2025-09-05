@@ -1,11 +1,12 @@
-import './AboutMe.scss'
+import './AboutMe.scss';
+import profil from '../../assets/Ellinor_profil.avif';
 
 export const AboutMe = () => {
   return (
     <div className='wrapper' id='about'>
       <div className='info-wrapper'>
         <section className='short-about-me'>
-          <img src="/ellinor_pic.avif" alt="Picture of Ellinor Johansson" />
+          <img src={profil} alt="Picture of Ellinor Johansson" width={100} height={100} />
           <div className='title-block'>
             <h2 className='front-end-title'>Frontend developer</h2>
             <h3 className='marketing-title'>+ digital marketer</h3>
@@ -36,14 +37,13 @@ export const AboutMe = () => {
           </p>
         </section>
         <section className='socials'>
-          <a href="https://github.com/ellinorjohansson" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/ellinorjohansson" target="_blank" rel="noopener noreferrer" aria-label='Link to Github'>
             <i className='bx bxl-github'></i>
           </a>
-          <a href="https://www.linkedin.com/in/ellinor-johansson-957a20224/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/ellinor-johansson-957a20224/" target="_blank" rel="noopener noreferrer" aria-label='Link to LinkedIn'>
             <i className='bx bxl-linkedin'></i>
           </a>
         </section>
-
       </div>
     </div>
   );
