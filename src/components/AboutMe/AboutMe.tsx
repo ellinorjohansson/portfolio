@@ -1,11 +1,12 @@
-import './AboutMe.scss'
+import './AboutMe.scss';
+import profil from '../../assets/Ellinor_profil.avif';
 
 export const AboutMe = () => {
   return (
     <div className='wrapper' id='about'>
       <div className='info-wrapper'>
         <section className='short-about-me'>
-          <img src="/ellinor_pic.avif" alt="Picture of Ellinor Johansson" />
+          <img src={profil} alt="Picture of Ellinor Johansson" width={100} height={100} />
           <div className='title-block'>
             <h2 className='front-end-title'>Frontend developer</h2>
             <h3 className='marketing-title'>+ digital marketer</h3>
