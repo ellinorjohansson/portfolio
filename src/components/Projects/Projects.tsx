@@ -9,6 +9,7 @@ import eshop from '../../assets/api_books.avif';
 import bookshop from '../../assets/the_book_page.avif';
 import todo from '../../assets/todo_screenshot.avif';
 import zoo from '../../assets/the_zoo.avif';
+import pumpkin_brew from '../../assets/pumpkin_brew.avif';
 
 export const Projects = () => {
   return (
@@ -56,7 +57,36 @@ export const Projects = () => {
             </div>
           </div>
 
-          
+
+          <div className="project-card">
+            <img src={pumpkin_brew} alt="" loading="lazy"></img>
+            <div className="project-content">
+              <h3>Pumpkin Brew</h3>
+              <p>
+                This project was created purely for practice and learning purposes. It focuses on experimenting with the design and presentation of flavored syrup bottles. The content is not intended for commercial use, but rather as an exercise in layout, structure, and visual presentation.
+              </p>
+              <div>
+                <ul>
+                  <li>HTML</li>
+                  <li>TypeScript</li>
+                  <li>Vite</li>
+                  <li>React</li>
+                  <li>SASS</li>
+                </ul>
+              </div>
+              <div className="project-buttons-row">
+                <a
+                  className="project-button"
+                  href="https://github.com/ellinorjohansson/pumpkin-webshop"
+                  target="_blank"
+                >
+                  Go to Github
+                </a>
+              </div>
+            </div>
+          </div>
+
+
           <div className="project-card">
             <img src={todo} alt="" loading="lazy"></img>
             <div className="project-content">
