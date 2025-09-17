@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio! This website showcases projects I’ve built, skills I’ve developed, and my journey as a developer.
 
+[Link to live version](https://steady-liger-f12f09.netlify.app/)
+
 ## Table of Contents
 
 - [Features](#features)
