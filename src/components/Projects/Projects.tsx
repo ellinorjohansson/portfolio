@@ -10,6 +10,7 @@ import bookshop from '../../assets/the_book_page.avif';
 import todo from '../../assets/todo_screenshot.avif';
 import zoo from '../../assets/the_zoo.avif';
 import pumpkin_brew from '../../assets/pumpkin_brew.avif';
+import apploy from '../../assets/apploy.avif';
 
 export const Projects = () => {
   return (
@@ -19,6 +20,41 @@ export const Projects = () => {
           Projects
         </h2>
         <div className="projects-grid">
+          <div className="project-card">
+            <img src={apploy} alt="" loading="lazy"></img>
+            <div className="project-content">
+              <h3>Apploy (Group Project)</h3>
+              <p>
+                This project is a group assignment where we created a custom
+                version of "Platsbanken" using open data from
+                Arbetsförmedlingen. The goal was to explore real-world job
+                advertisement data and present it in a user-friendly application
+                while practicing React concepts, data fetching, and
+                visualization. Using Arbetsförmedlingens design system but with
+                different color.
+              </p>
+              <div>
+                <ul>
+                  <li>HTML</li>
+                  <li>TypeScript</li>
+                  <li>Vite</li>
+                  <li>React</li>
+                  <li>css</li>
+                  <li>Eslint</li>
+                  <li>Prettier</li>
+                </ul>
+              </div>
+              <div className="project-buttons-row">
+                <a
+                  className="project-button"
+                  href="https://github.com/ellinorjohansson/apploy"
+                  target="_blank"
+                >
+                  Go to Github
+                </a>
+              </div>
+            </div>
+          </div>
           <div className="project-card">
             <img src={zoo} alt="" loading="lazy"></img>
             <div className="project-content">
@@ -57,13 +93,16 @@ export const Projects = () => {
             </div>
           </div>
 
-
           <div className="project-card">
             <img src={pumpkin_brew} alt="" loading="lazy"></img>
             <div className="project-content">
               <h3>Pumpkin Brew</h3>
               <p>
-                This project was created purely for practice and learning purposes. It focuses on experimenting with the design and presentation of flavored syrup bottles. The content is not intended for commercial use, but rather as an exercise in layout, structure, and visual presentation.
+                This project was created purely for practice and learning
+                purposes. It focuses on experimenting with the design and
+                presentation of flavored syrup bottles. The content is not
+                intended for commercial use, but rather as an exercise in
+                layout, structure, and visual presentation.
               </p>
               <div>
                 <ul>
@@ -85,7 +124,6 @@ export const Projects = () => {
               </div>
             </div>
           </div>
-
 
           <div className="project-card">
             <img src={todo} alt="" loading="lazy"></img>
@@ -124,7 +162,6 @@ export const Projects = () => {
               </div>
             </div>
           </div>
-
 
           <div className="project-card">
             <img src={bookshop} alt="" loading="lazy"></img>
@@ -167,7 +204,6 @@ export const Projects = () => {
             </div>
           </div>
 
-
           <div className="project-card">
             <img src={eshop} alt="" loading="lazy"></img>
             <div className="project-content">
@@ -208,7 +244,6 @@ export const Projects = () => {
               </div>
             </div>
           </div>
-
 
           <div className="project-card">
             <img src={skyvoyage} alt="" loading="lazy"></img>
@@ -251,7 +286,6 @@ export const Projects = () => {
             </div>
           </div>
 
-
           <div className="project-card">
             <img src={mulberry} alt="" loading="lazy"></img>
             <div className="project-content">
@@ -286,7 +320,6 @@ export const Projects = () => {
             </div>
           </div>
 
-
           <div className="project-card">
             <img src={memory} alt="" loading="lazy"></img>
             <div className="project-content">
@@ -320,7 +353,6 @@ export const Projects = () => {
             </div>
           </div>
 
-
           <div className="project-card">
             <img src={quote} alt="" loading="lazy"></img>
             <div className="project-content">
@@ -351,7 +383,6 @@ export const Projects = () => {
               </div>
             </div>
           </div>
-
 
           <div className="project-card">
             <img src={christmas} alt="" loading="lazy"></img>
@@ -390,7 +421,6 @@ export const Projects = () => {
             </div>
           </div>
 
-
           <div className="project-card">
             <img src={tough} alt="" loading="lazy"></img>
             <div className="project-content">
@@ -424,8 +454,6 @@ export const Projects = () => {
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </>
