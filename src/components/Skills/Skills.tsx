@@ -18,6 +18,8 @@ export const Skills = () => {
             <li>React</li>
             <li>SQL</li>
             <li>GSAP</li>
+            <li>Next.js</li>
+            <li>Tailwind</li>
           </ul>
         </div>
 
