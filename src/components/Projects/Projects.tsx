@@ -24,12 +24,12 @@ export const Projects = () => {
             <div className="project-content">
               <h3>Consid Connect (LIA 2)</h3>
               <p>
-                Consid Connect is an internal employee platform for Consid. It
-                lets colleagues find each other, fill in a profile, earn points
-                through activity (Fika meetups, emails, daily quiz), see a
-                leaderboard, get matched with colleagues for activities, and
-                view new joiners. Admins can manage users and teams through a
-                dedicated admin section.
+                Consid Connect is an internal employee platform for Consid that
+                i developed under my LIA. It lets colleagues find each other,
+                fill in a profile, earn points through activity (Fika meetups,
+                emails, daily quiz), see a leaderboard, get matched with
+                colleagues for activities, and view new joiners. Admins can
+                manage users and teams through a dedicated admin section.
               </p>
               <div>
                 <ul>
