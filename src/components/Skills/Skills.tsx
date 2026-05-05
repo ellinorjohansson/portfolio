@@ -1,4 +1,4 @@
-import './Skills.scss'
+import "./Skills.scss";
 
 export const Skills = () => {
   return (
@@ -16,6 +16,9 @@ export const Skills = () => {
             <li>TypeScript</li>
             <li>Vue</li>
             <li>React</li>
+            <li>Next.js</li>
+            <li>Tailwind</li>
+            <li>NextAuth</li>
             <li>SQL</li>
             <li>GSAP</li>
           </ul>
@@ -37,6 +40,7 @@ export const Skills = () => {
           <h3>Toolbox</h3>
           <ul>
             <li>VS Code</li>
+            <li>Git</li>
             <li>GitHub</li>
             <li>npm / pnpm</li>
             <li>Lighthouse</li>
@@ -54,6 +58,7 @@ export const Skills = () => {
           <ul>
             <li>MySQL</li>
             <li>MongoDB</li>
+            <li>Firebase</li>
             <li>NoSQL</li>
           </ul>
         </div>
@@ -63,6 +68,7 @@ export const Skills = () => {
           <ul>
             <li>REST</li>
             <li>GraphQL</li>
+            <li>Cloudinary</li>
           </ul>
         </div>
 
