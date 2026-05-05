@@ -1,16 +1,15 @@
-import './Projects.scss';
-import skyvoyage from '../../assets/skyvoyage.avif';
-import mulberry from '../../assets/mulberry_beauty.avif';
-import tough from '../../assets/tough_cookie.avif';
-import christmas from '../../assets/christmas_shop.avif';
-import memory from '../../assets/memory.avif';
-import quote from '../../assets/quote_generator.avif';
-import eshop from '../../assets/api_books.avif';
-import bookshop from '../../assets/the_book_page.avif';
-import todo from '../../assets/todo_screenshot.avif';
-
-
-
+import "./Projects.scss";
+import skyvoyage from "../../assets/skyvoyage.avif";
+import mulberry from "../../assets/mulberry_beauty.avif";
+import tough from "../../assets/tough_cookie.avif";
+import christmas from "../../assets/christmas_shop.avif";
+import memory from "../../assets/memory.avif";
+import quote from "../../assets/quote_generator.avif";
+import eshop from "../../assets/api_books.avif";
+import bookshop from "../../assets/the_book_page.avif";
+import todo from "../../assets/todo_screenshot.avif";
+import consid from "../../assets/consid_connect.avif";
+import lopply from "../../assets/lopply.avif";
 
 export const Projects = () => {
   return (
@@ -21,11 +20,82 @@ export const Projects = () => {
         </h2>
         <div className="projects-grid">
           <div className="project-card">
-            <img 
-              src={skyvoyage} 
-              alt="" 
-              loading="lazy"
-            ></img>
+            <img src={consid} alt="" loading="lazy"></img>
+            <div className="project-content">
+              <h3>Consid Connect (LIA 2)</h3>
+              <p>
+                Consid Connect is an internal employee platform for Consid. It
+                lets colleagues find each other, fill in a profile, earn points
+                through activity (Fika meetups, emails, daily quiz), see a
+                leaderboard, get matched with colleagues for activities, and
+                view new joiners. Admins can manage users and teams through a
+                dedicated admin section.
+              </p>
+              <div>
+                <ul>
+                  <li>HTML</li>
+                  <li>Tailwind</li>
+                  <li>TypeScript</li>
+                  <li>React</li>
+                  <li>Nextjs</li>
+                  <li>Firebase</li>
+                  <li>Cloudinary</li>
+                  <li>Prettier</li>
+                  <li>Eslint</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="project-card">
+            <img src={lopply} alt="" loading="lazy"></img>
+            <div className="project-content">
+              <h3>Lopply (Thesis)</h3>
+              <p>
+                This project is a web platform for discovering and tracking
+                running races in Sweden and around the world. Users can filter
+                events, save favorites to a personal bucket list, get matched
+                with races based on their running preferences and add new races.
+                Admin can approve submitted races, manage access and delete
+                events. The goal is to create an interactive, user-friendly tool
+                that connects runners with upcoming events and makes race
+                discovery easier.
+              </p>
+              <div>
+                <ul>
+                  <li>HTML</li>
+                  <li>Tailwind</li>
+                  <li>TypeScript</li>
+                  <li>React</li>
+                  <li>Nextjs</li>
+                  <li>Mongodb</li>
+                  <li>Mongoose</li>
+                  <li>Nextauth</li>
+                  <li>Prettier</li>
+                  <li>Eslint</li>
+                </ul>
+              </div>
+              <div className="project-buttons-row">
+                <a
+                  className="project-button"
+                  href="https://lopply.vercel.app/"
+                  target="_blank"
+                >
+                  View demo
+                </a>
+                <a
+                  className="project-button"
+                  href="https://github.com/ellinorjohansson/Lopply"
+                  target="_blank"
+                >
+                  Go to Github
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="project-card">
+            <img src={skyvoyage} alt="" loading="lazy"></img>
             <div className="project-content">
               <h3>SkyVoyage (Group project) </h3>
               <p>
@@ -66,11 +136,7 @@ export const Projects = () => {
           </div>
 
           <div className="project-card">
-            <img
-              src={mulberry}
-              alt=""
-              loading="lazy"
-            ></img>
+            <img src={mulberry} alt="" loading="lazy"></img>
             <div className="project-content">
               <h3>Mulberry Beauty (Group project) </h3>
               <p>TypeScript quiz with 20 questions about geography.</p>
@@ -104,11 +170,7 @@ export const Projects = () => {
           </div>
 
           <div className="project-card">
-            <img 
-              src={tough} 
-              alt="" 
-              loading="lazy"
-            ></img>
+            <img src={tough} alt="" loading="lazy"></img>
             <div className="project-content">
               <h3>Tough Cookie</h3>
               <p>
@@ -142,11 +204,7 @@ export const Projects = () => {
           </div>
 
           <div className="project-card">
-            <img
-              src={christmas}
-              alt=""
-              loading="lazy"
-            ></img>
+            <img src={christmas} alt="" loading="lazy"></img>
             <div className="project-content">
               <h3>Christmas Shop</h3>
               <p>
@@ -183,11 +241,7 @@ export const Projects = () => {
           </div>
 
           <div className="project-card">
-            <img 
-              src={memory}
-              alt="" 
-              loading="lazy"
-            ></img>
+            <img src={memory} alt="" loading="lazy"></img>
             <div className="project-content">
               <h3>Memory</h3>
               <p>
@@ -220,11 +274,7 @@ export const Projects = () => {
           </div>
 
           <div className="project-card">
-            <img
-              src={quote}
-              alt=""
-              loading="lazy"
-            ></img>
+            <img src={quote} alt="" loading="lazy"></img>
             <div className="project-content">
               <h3>Quote Generator</h3>
               <p>
@@ -255,11 +305,7 @@ export const Projects = () => {
           </div>
 
           <div className="project-card">
-            <img 
-              src={eshop} 
-              alt="" 
-              loading="lazy"
-            ></img>
+            <img src={eshop} alt="" loading="lazy"></img>
             <div className="project-content">
               <h3>E-shop Product Catalog – REST API & Frontend</h3>
               <p>
@@ -300,11 +346,7 @@ export const Projects = () => {
           </div>
 
           <div className="project-card">
-            <img
-              src={bookshop}
-              alt=""
-              loading="lazy"
-            ></img>
+            <img src={bookshop} alt="" loading="lazy"></img>
             <div className="project-content">
               <h3>The Book Page (Group Project)</h3>
               <p>
@@ -344,11 +386,7 @@ export const Projects = () => {
             </div>
           </div>
           <div className="project-card">
-            <img
-              src={todo}
-              alt=""
-              loading="lazy"
-            ></img>
+            <img src={todo} alt="" loading="lazy"></img>
             <div className="project-content">
               <h3>The Last Todo</h3>
               <p>
