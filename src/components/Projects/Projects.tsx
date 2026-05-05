@@ -1,18 +1,19 @@
-import './Projects.scss';
-import skyvoyage from '../../assets/skyvoyage.avif';
-import mulberry from '../../assets/mulberry_beauty.avif';
-import tough from '../../assets/tough_cookie.avif';
-import christmas from '../../assets/christmas_shop.avif';
-import memory from '../../assets/memory.avif';
-import quote from '../../assets/quote_generator.avif';
-import eshop from '../../assets/api_books.avif';
-import bookshop from '../../assets/the_book_page.avif';
-import todo from '../../assets/todo_screenshot.avif';
-import zoo from '../../assets/the_zoo.avif';
-import pumpkin_brew from '../../assets/pumpkin_brew.avif';
-import apploy from '../../assets/apploy.avif';
+import "./Projects.scss";
+import skyvoyage from "../../assets/skyvoyage.avif";
+import mulberry from "../../assets/mulberry_beauty.avif";
+import tough from "../../assets/tough_cookie.avif";
+import christmas from "../../assets/christmas_shop.avif";
+import memory from "../../assets/memory.avif";
+import quote from "../../assets/quote_generator.avif";
+import eshop from "../../assets/api_books.avif";
+import bookshop from "../../assets/the_book_page.avif";
+import todo from "../../assets/todo_screenshot.avif";
+import zoo from "../../assets/the_zoo.avif";
+import pumpkin_brew from "../../assets/pumpkin_brew.avif";
+import apploy from "../../assets/apploy.avif";
 import consid from "../../assets/consid_connect.avif";
 import lopply from "../../assets/lopply.avif";
+import subscription from "../../assets/subscription.avif";
 
 export const Projects = () => {
   return (
@@ -46,6 +47,48 @@ export const Projects = () => {
                   <li>Prettier</li>
                   <li>Eslint</li>
                 </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="project-card">
+            <img src={subscription} alt="" loading="lazy"></img>
+            <div className="project-content">
+              <h3>Subscription tracker</h3>
+              <p>
+                Subscription Hub is a web app for tracking recurring
+                subscriptions in one place. It helps users organize services,
+                monitor billing cycles, and keep a simple activity history of
+                subscription changes.
+              </p>
+              <div>
+                <ul>
+                  <li>HTML</li>
+                  <li>Tailwind</li>
+                  <li>TypeScript</li>
+                  <li>React</li>
+                  <li>Nextjs</li>
+                  <li>Mongodb</li>
+                  <li>Mongoose</li>
+                  <li>Prettier</li>
+                  <li>Eslint</li>
+                </ul>
+              </div>
+              <div className="project-buttons-row">
+                <a
+                  className="project-button"
+                  href="https://subscription-hub-eta.vercel.app/"
+                  target="_blank"
+                >
+                  View demo
+                </a>
+                <a
+                  className="project-button"
+                  href="https://github.com/ellinorjohansson/subscription-hub"
+                  target="_blank"
+                >
+                  Go to Github
+                </a>
               </div>
             </div>
           </div>
