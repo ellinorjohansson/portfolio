@@ -1,6 +1,17 @@
-.app {
+@use "./style/variables.scss" as *;
+
+.app-shell {
+    min-height: 100vh;
+}
+
+.app-main {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    box-sizing: border-box;
+    gap: 40px;
+    padding: 132px 0 48px;
+
+    @media (max-width: 768px) {
+        padding-top: 112px;
+        gap: 28px;
+    }
 }

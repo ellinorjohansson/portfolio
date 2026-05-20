@@ -1,22 +1,61 @@
+@use "../../style/variables.scss" as *;
+
 header {
-  background-color: rgb(34, 57, 34);
-  color: white;
+  @include section-frame;
+  @include panel;
+  color: $color-text;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3px;
-  width: 100%;
+  padding: 14px 22px;
+  width: min(1180px, calc(100% - 48px));
   z-index: 1000;
   position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
   &.scrolled {
-    background-color: rgba(34, 57, 34, 0.6);
-    backdrop-filter: blur(28px);
+    background:
+      linear-gradient(180deg, rgba(255, 246, 235, 0.1), rgba(255, 246, 235, 0.03)),
+      rgba(34, 17, 21, 0.9);
+    box-shadow: $shadow-card;
   }
 
-  h1 {
-    margin-left: 90px;
-    font-family: 'poppins';
-    font-weight: 200;
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(160, 70, 79, 0.9), rgba(92, 22, 36, 0.9));
+      color: $color-heading;
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.55rem;
+      font-weight: 600;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18);
+    }
+
+    .brand-copy {
+      display: flex;
+      flex-direction: column;
+
+      strong {
+        font-size: 1rem;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+      }
+
+      span {
+        color: $color-text-muted;
+        font-size: 0.85rem;
+      }
+    }
   }
 
   .header-toggle {
@@ -29,14 +68,14 @@ header {
     border: none;
     padding: 0;
     cursor: pointer;
-    z-index: 1001; 
+    z-index: 1001;
 
     span {
       display: block;
       height: 4px;
       border-radius: 4px;
       transition: 0.3s ease;
-      background-color: white;
+      background-color: $color-heading;
     }
 
     &.open {
@@ -55,31 +94,37 @@ header {
   }
 
   .header-nav {
-    margin-right: 90px;
     ul {
       display: flex;
-      gap: 30px;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
 
       li {
         list-style: none;
         cursor: pointer;
-        font-size: 1.3rem;
-        font-family: 'poppins';
-        font-weight: 200;
+        font-size: 1rem;
+        font-family: "Manrope", sans-serif;
+        font-weight: 500;
         a {
           display: inline-block;
-          padding: 10px;
+          padding: 10px 16px;
           text-decoration: none;
-          color: white;
-          transition: transform 0.2s ease, color 0.2s ease;
+          color: $color-text-muted;
+          border-radius: 999px;
+          border: 1px solid transparent;
+          transition: transform 0.2s ease, color 0.2s ease, background-color 0.2s ease,
+            border-color 0.2s ease;
           &:hover {
-            color: rgb(77, 104, 77);
-            transform: scale(1.1);
+            color: $color-heading;
+            background: rgba(255, 246, 235, 0.05);
+            border-color: rgba(232, 206, 177, 0.14);
           }
         }
         a.active {
-          color: rgb(77, 104, 77);
-          font-weight: 500;
+          color: $color-heading;
+          background: linear-gradient(135deg, rgba(160, 70, 79, 0.26), rgba(160, 70, 79, 0.08));
+          border-color: rgba(232, 206, 177, 0.18);
         }
       }
     }
@@ -87,26 +132,40 @@ header {
 
   @media (max-width: 768px) {
     flex-wrap: wrap;
+    top: 12px;
+    width: min(100% - 24px, 1180px);
+    padding: 14px 16px;
 
-    h1 {
-      margin-left: 42px;
-      font-size: 1.5rem;
+    .brand {
+      gap: 10px;
+
+      .brand-mark {
+        width: 46px;
+        height: 46px;
+      }
+
+      .brand-copy strong {
+        font-size: 0.92rem;
+      }
+
+      .brand-copy span {
+        font-size: 0.78rem;
+      }
     }
 
     .header-toggle {
       display: flex;
-      margin-right: 80px;
     }
 
     .header-nav {
       width: 100%;
       display: none;
       text-align: center;
-      margin-left: 50px;
+      margin-top: 14px;
 
       ul {
         flex-direction: column;
-        padding: 16px 0;
+        padding: 8px 0 2px;
       }
 
       &.open {

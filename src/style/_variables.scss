@@ -1,0 +1,63 @@
+$color-bg: #160d0f;
+$color-bg-soft: #221316;
+$color-panel: rgba(44, 23, 28, 0.82);
+$color-panel-strong: rgba(57, 27, 34, 0.94);
+$color-panel-light: rgba(244, 232, 217, 0.08);
+$color-border: rgba(232, 206, 177, 0.22);
+$color-text: #f5eadb;
+$color-text-muted: rgba(245, 234, 219, 0.76);
+$color-heading: #fff6eb;
+$color-accent: #a0464f;
+$color-accent-strong: #7f2430;
+$color-accent-soft: #d4b595;
+$color-chip-bg: #ead8c2;
+$color-chip-text: #3b1f25;
+$shadow-soft: 0 18px 60px rgba(0, 0, 0, 0.28);
+$shadow-card: 0 24px 70px rgba(6, 2, 3, 0.34);
+$radius-xl: 32px;
+$radius-lg: 24px;
+$radius-md: 18px;
+
+@mixin panel {
+	background: linear-gradient(180deg, rgba(255, 246, 235, 0.06), rgba(255, 246, 235, 0.02)),
+		$color-panel;
+	border: 1px solid $color-border;
+	border-radius: $radius-xl;
+	box-shadow: $shadow-soft;
+	backdrop-filter: blur(16px);
+}
+
+@mixin section-frame {
+	width: min(1180px, calc(100% - 48px));
+	margin: 0 auto;
+
+	@media (max-width: 640px) {
+		width: min(100% - 24px, 1180px);
+	}
+}
+
+@mixin section-heading {
+	margin: 0;
+	color: $color-heading;
+	font-family: "Cormorant Garamond", serif;
+	font-size: clamp(2.4rem, 4vw, 4rem);
+	font-weight: 600;
+	letter-spacing: 0.02em;
+}
+
+@mixin eyebrow {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.22em;
+	font-size: 0.74rem;
+	color: $color-accent-soft;
+
+	&::before {
+		content: "";
+		width: 34px;
+		height: 1px;
+		background: currentColor;
+	}
+}

@@ -1,17 +1,17 @@
-import { useEffect, useState } from 'react';
-import './Header.scss';
+import { useEffect, useState } from "react";
+import "./Header.scss";
 
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState('about');
+  const [activeSection, setActiveSection] = useState("about");
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 10);
 
       // Matchar id i samma ordning som i nav
-      const sectionIds = ['about', 'projects', 'skills', 'getInTouch'];
+      const sectionIds = ["about", "projects", "skills", "getInTouch"];
       let current = sectionIds[0];
 
       // Hitta den sektion vars topp är närmast men ovanför headern för scrollvy i nav
@@ -27,19 +27,25 @@ export const Header = () => {
       setActiveSection(current);
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll, { passive: true });
     handleScroll();
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // Stäng meny vid klick på länk på mobil
   const handleNavClick = () => setMenuOpen(false);
 
   return (
-    <header className={scrolled ? 'scrolled' : ''}>
-      <h1>Ellinor Johansson</h1>
+    <header className={scrolled ? "scrolled" : ""}>
+      <a className="brand" href="#about" onClick={handleNavClick}>
+        <span className="brand-mark">EJ</span>
+        <span className="brand-copy">
+          <strong>Ellinor Johansson</strong>
+          <span>Frontend developer</span>
+        </span>
+      </a>
       <button
-        className={`header-toggle${menuOpen ? ' open' : ''}`}
+        className={`header-toggle${menuOpen ? " open" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Toggle menu"
       >
@@ -47,12 +53,12 @@ export const Header = () => {
         <span></span>
         <span></span>
       </button>
-      <nav className={`header-nav${menuOpen ? ' open' : ''}`}>
+      <nav className={`header-nav${menuOpen ? " open" : ""}`}>
         <ul>
           <li>
             <a
               href="#about"
-              className={activeSection === 'about' ? 'active' : ''}
+              className={activeSection === "about" ? "active" : ""}
               onClick={handleNavClick}
             >
               About me
@@ -61,7 +67,7 @@ export const Header = () => {
           <li>
             <a
               href="#projects"
-              className={activeSection === 'projects' ? 'active' : ''}
+              className={activeSection === "projects" ? "active" : ""}
               onClick={handleNavClick}
             >
               Projects
@@ -70,7 +76,7 @@ export const Header = () => {
           <li>
             <a
               href="#skills"
-              className={activeSection === 'skills' ? 'active' : ''}
+              className={activeSection === "skills" ? "active" : ""}
               onClick={handleNavClick}
             >
               Skills
@@ -79,7 +85,7 @@ export const Header = () => {
           <li>
             <a
               href="#getInTouch"
-              className={activeSection === 'getInTouch' ? 'active' : ''}
+              className={activeSection === "getInTouch" ? "active" : ""}
               onClick={handleNavClick}
             >
               Get in touch

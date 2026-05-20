@@ -14,15 +14,65 @@ import apploy from "../../assets/apploy.avif";
 import consid from "../../assets/consid_connect.avif";
 import lopply from "../../assets/lopply.avif";
 import subscription from "../../assets/subscription.avif";
+import nomly from "../../assets/nomly.avif";
 
 export const Projects = () => {
   return (
     <>
-      <div className="projects-wrapper">
-        <h2 className="project-header" id="projects">
-          Projects
-        </h2>
+      <section className="projects-wrapper" id="projects">
+        <div className="projects-intro">
+          <p className="projects-eyebrow">Selected work</p>
+          <h2 className="project-header">Projects</h2>
+          <p className="projects-lead">
+            A mix of production-ready school projects, collaborations, and
+            personal builds where I focused on frontend structure, readability,
+            and visual presentation.
+          </p>
+        </div>
         <div className="projects-grid">
+          <div className="project-card">
+            <img src={nomly} alt="" loading="lazy"></img>
+            <div className="project-content">
+              <h3>Nomly</h3>
+              <p>
+                Nomly is a recipe collection app built with Next.js, React,
+                TypeScript, Tailwind CSS, MongoDB, and Mongoose. It is designed
+                to make it easy to save recipes, browse a shared recipe feed,
+                and manage your own collection with authentication, filtering,
+                and private/public visibility.
+              </p>
+              <div>
+                <ul>
+                  <li>HTML</li>
+                  <li>Tailwind</li>
+                  <li>TypeScript</li>
+                  <li>React</li>
+                  <li>Nextjs</li>
+                  <li>MongoDB</li>
+                  <li>Mongoose</li>
+                  <li>Prettier</li>
+                  <li>Eslint</li>
+                </ul>
+              </div>
+              <div className="project-buttons-row">
+                <a
+                  className="project-button"
+                  href="https://nomly-eta.vercel.app/"
+                  target="_blank"
+                >
+                  View demo
+                </a>
+                <a
+                  className="project-button"
+                  href="https://github.com/ellinorjohansson/Nomly"
+                  target="_blank"
+                >
+                  Go to Github
+                </a>
+              </div>
+            </div>
+          </div>
+
           <div className="project-card">
             <img src={consid} alt="" loading="lazy"></img>
             <div className="project-content">
@@ -44,6 +94,7 @@ export const Projects = () => {
                   <li>Nextjs</li>
                   <li>Firebase</li>
                   <li>Cloudinary</li>
+                  <li>GSAP</li>
                   <li>Prettier</li>
                   <li>Eslint</li>
                 </ul>
@@ -575,7 +626,7 @@ export const Projects = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
