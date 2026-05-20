@@ -1,77 +1,89 @@
+@use "../../style/variables.scss" as *;
+
 .skills {
-  background: rgba(34, 57, 34, 0.55);
-  border-radius: 16px;
-  border: 2px solid rgba(174, 247, 174, 0.8);
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 48px 24px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.18);
-  color: #fefaf4;
-  background-image: url('../../assets/green_marble_background.avif'); 
-  background-size: cover;
-  background-blend-mode: overlay;
+  @include section-frame;
+  @include panel;
+  padding: clamp(28px, 4vw, 42px);
 
   h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.2rem;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom: 48px;
-    letter-spacing: 1px;
+    @include section-heading;
+    margin-top: 12px;
+  }
+}
+
+.skills-intro {
+  max-width: 760px;
+  margin-bottom: 32px;
+}
+
+.skills-eyebrow {
+  @include eyebrow;
+}
+
+.skills-lead {
+  margin: 16px 0 0;
+  color: $color-text-muted;
+  line-height: 1.7;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.skills-wrapper {
+  padding: 22px;
+  border-radius: $radius-lg;
+  background: rgba(255, 246, 235, 0.04);
+  border: 1px solid rgba(232, 206, 177, 0.12);
+
+  h3 {
+    margin: 0 0 16px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    color: $color-heading;
   }
 
-  .skills-wrapper {
-    margin-bottom: 40px;
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
 
-    h3 {
-      font-family: 'Poppins', sans-serif;
-      font-size: 1.5rem;
-      font-weight: 600;
-      color: #aef7ae;
-      margin-bottom: 16px;
-      margin-left: 20px;
-    }
+    li {
+      background: rgba(234, 216, 194, 0.95);
+      color: $color-chip-text;
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
 
-    ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-left: 20px;
-
-      li {
-        background: #f5e9da;
-        color: #223722;
-        border-radius: 8px;
-        padding: 8px 16px;
-        font-size: 1rem;
-        font-weight: 500;
-        font-family: 'Poppins', sans-serif;
-        letter-spacing: 0.5px;
-        box-shadow: 0 2px 8px rgba(34, 57, 34, 0.08);
-        transition: transform 0.2s, box-shadow 0.2s;
-
-        &:hover {
-          transform: translateY(-4px);
-          box-shadow: 0 4px 16px rgba(34, 57, 34, 0.18);
-        }
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
       }
     }
   }
 }
 
 @media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
   .skills {
-    padding: 32px 6vw;
+    padding: 22px;
   }
 
-  .skills-wrapper ul {
-    gap: 8px;
-  }
-
-  .skills-wrapper li {
-    font-size: 0.9rem;
-    padding: 6px 12px;
+  .skills-wrapper {
+    padding: 20px;
   }
 }
