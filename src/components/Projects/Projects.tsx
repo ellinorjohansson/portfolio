@@ -130,7 +130,7 @@ const projectItems = [
     image: zoo,
     description:
       "This project is a web application where users can explore a zoo, view animals, and feed them. The focus is on UI/UX, modern styling, and the use of React concepts such as routing, context, and reducers.",
-    stack: ["HTML", "TypeScript", "Vite", "React", "SASS"],
+    stack: ["HTML", "TypeScript", "Vite", "React", "SCSS"],
     links: [
       {
         label: "View demo",
@@ -147,7 +147,7 @@ const projectItems = [
     image: pumpkin_brew,
     description:
       "This project was created purely for practice and learning purposes. It focuses on experimenting with the design and presentation of flavored syrup bottles. The content is not intended for commercial use, but rather as an exercise in layout, structure, and visual presentation.",
-    stack: ["HTML", "TypeScript", "Vite", "React", "SASS"],
+    stack: ["HTML", "TypeScript", "Vite", "React", "SCSS"],
     links: [
       {
         label: "Go to Github",
@@ -179,7 +179,7 @@ const projectItems = [
       "In this group project we developed a complete system for managing users, books, and reviews. The backend is powered by MongoDB and Express.js, which exposes an API. The frontend, built with Vue.js, fetches and displays the data from the API in a user-friendly interface. The application includes an admin login system with password encryption. Once logged in, the admin can view and manage all users and books. Logged-in users can browse books and leave reviews.",
     stack: [
       "HTML",
-      "SASS",
+      "SCSS",
       "TypeScript",
       "Prettier",
       "Eslint",
@@ -201,10 +201,10 @@ const projectItems = [
     title: "E-shop Product Catalog - REST API & Frontend",
     image: eshop,
     description:
-      "This project is a simple e-shop product catalog built as part of an assignment. It includes a MySQL database, a RESTful API using Express, and a frontend interface built with Vite, TypeScript, and SASS. Products can belong to multiple categories, and categories can contain multiple products (many-to-many relationship). The API supports full CRUD functionality and filtering.",
+      "This project is a simple e-shop product catalog built as part of an assignment. It includes a MySQL database, a RESTful API using Express, and a frontend interface built with Vite, TypeScript, and SCSS. Products can belong to multiple categories, and categories can contain multiple products (many-to-many relationship). The API supports full CRUD functionality and filtering.",
     stack: [
       "HTML",
-      "SASS",
+      "SCSS",
       "TypeScript",
       "Prettier",
       "Eslint",
@@ -228,7 +228,7 @@ const projectItems = [
     image: skyvoyage,
     description:
       "This project focuses on implementing a given design and translating it into code using Vue.js. Our task was to accurately follow the design specifications and visual guidelines to create a fully functional and responsive web application.",
-    stack: ["HTML", "SASS", "TypeScript", "Vue", "Prettier", "Eslint", "Vite"],
+    stack: ["HTML", "SCSS", "TypeScript", "Vue", "Prettier", "Eslint", "Vite"],
     links: [
       {
         label: "View demo",
@@ -244,7 +244,7 @@ const projectItems = [
     title: "Mulberry Beauty (Group project)",
     image: mulberry,
     description: "TypeScript quiz with 20 questions about geography.",
-    stack: ["HTML", "SASS", "TypeScript", "Prettier", "Eslint", "Vite"],
+    stack: ["HTML", "SCSS", "TypeScript", "Prettier", "Eslint", "Vite"],
     links: [
       {
         label: "View demo",
@@ -260,8 +260,8 @@ const projectItems = [
     title: "Memory",
     image: memory,
     description:
-      "Fruity Memory is a fun and simple memory matching game built with HTML, Sass, and TypeScript. The game features cards with fruit images that the player needs to match. Once all cards are matched correctly, a message is displayed, and the player has the option to play again.",
-    stack: ["HTML", "SASS", "TypeScript", "Prettier", "Eslint", "Vite"],
+      "Fruity Memory is a fun and simple memory matching game built with HTML, SCSS, and TypeScript. The game features cards with fruit images that the player needs to match. Once all cards are matched correctly, a message is displayed, and the player has the option to play again.",
+    stack: ["HTML", "SCSS", "TypeScript", "Prettier", "Eslint", "Vite"],
     links: [
       {
         label: "Go to Github",
@@ -273,8 +273,8 @@ const projectItems = [
     title: "Quote Generator",
     image: quote,
     description:
-      "Quote Generator is a simple generator built with HTML, Sass, and TypeScript. The app displays inspiring, funny, or thoughtful quotes one at a time.",
-    stack: ["HTML", "SASS", "TypeScript", "Prettier", "Eslint", "Vite"],
+      "Quote Generator is a simple generator built with HTML, SCSS, and TypeScript. The app displays inspiring, funny, or thoughtful quotes one at a time.",
+    stack: ["HTML", "SCSS", "TypeScript", "Prettier", "Eslint", "Vite"],
     links: [
       {
         label: "Go to Github",
@@ -287,7 +287,7 @@ const projectItems = [
     image: christmas,
     description:
       "Task with the aim of learning the basics of the JavaScript course where the goal was a webshop based on a list of requirements from a customer.",
-    stack: ["HTML", "SASS", "JavaScript", "Prettier", "Eslint"],
+    stack: ["HTML", "SCSS", "JavaScript", "Prettier", "Eslint"],
     links: [
       {
         label: "View demo",
@@ -304,7 +304,7 @@ const projectItems = [
     image: tough,
     description:
       "Task with the aim of learning the basics of the HTML/CSS course where the goal was a website based on a wireframe from a customer.",
-    stack: ["HTML", "SASS"],
+    stack: ["HTML", "SCSS"],
     links: [
       {
         label: "View demo",
