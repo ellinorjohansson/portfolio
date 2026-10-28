@@ -31,7 +31,7 @@ export const AboutMe = () => {
             </div>
             <div>
               <dt>Stack</dt>
-              <dd>React, TypeScript, Next.js, Sass, Tailwind</dd>
+              <dd>React, TypeScript, Next.js, Scss, Tailwind</dd>
             </div>
             <div>
               <dt>Approach</dt>

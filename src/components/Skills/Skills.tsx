@@ -19,7 +19,7 @@ export const Skills = () => {
             <ul>
               <li>HTML5</li>
               <li>CSS3</li>
-              <li>SASS</li>
+              <li>SCSS</li>
               <li>JavaScript</li>
               <li>TypeScript</li>
               <li>React</li>
